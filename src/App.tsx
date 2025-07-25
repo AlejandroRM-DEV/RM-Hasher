@@ -102,23 +102,6 @@ function App() {
 					<Menubar className="border-none bg-transparent shadow-none">
 						<MenubarMenu>
 							<MenubarTrigger className="data-[state=open]:bg-slate-100">
-								Files
-							</MenubarTrigger>
-							<MenubarContent>
-								<MenubarItem onClick={selectFile}>
-									<File className="w-4 h-4 mr-2" />
-									Select files
-									<MenubarShortcut>⌘O</MenubarShortcut>
-								</MenubarItem>
-								<MenubarItem onClick={selectFolder}>
-									<Folder className="w-4 h-4 mr-2" />
-									Select folder
-									<MenubarShortcut>⌘D</MenubarShortcut>
-								</MenubarItem>
-							</MenubarContent>
-						</MenubarMenu>
-						<MenubarMenu>
-							<MenubarTrigger className="data-[state=open]:bg-slate-100">
 								Algorithms
 							</MenubarTrigger>
 							<MenubarContent>
@@ -189,6 +172,23 @@ function App() {
 										</MenubarCheckboxItem>
 									</MenubarSubContent>
 								</MenubarSub>
+							</MenubarContent>
+						</MenubarMenu>
+						<MenubarMenu>
+							<MenubarTrigger className="data-[state=open]:bg-slate-100">
+								Files
+							</MenubarTrigger>
+							<MenubarContent>
+								<MenubarItem onClick={selectFile}>
+									<File className="w-4 h-4 mr-2" />
+									Select files
+									<MenubarShortcut>⌘O</MenubarShortcut>
+								</MenubarItem>
+								<MenubarItem onClick={selectFolder}>
+									<Folder className="w-4 h-4 mr-2" />
+									Select folder
+									<MenubarShortcut>⌘D</MenubarShortcut>
+								</MenubarItem>
 							</MenubarContent>
 						</MenubarMenu>
 						<MenubarMenu>
